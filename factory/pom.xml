@@ -3,10 +3,14 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.web_zss</groupId>
   <artifactId>factory</artifactId>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
   <version>1.0</version>
+  
+  
   <name>factory Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -14,8 +18,26 @@
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
+    
+    <dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-context</artifactId>
+	    <version>4.2.9.RELEASE</version>
+	</dependency>
+
   </dependencies>
+  
+  
   <build>
     <finalName>factory</finalName>
+    <plugins>
+  		<plugin>
+  			<artifactId>maven-compiler-plugin</artifactId>
+  			<configuration>
+				<source>${java.version}</source>
+				<target>${java.version}</target>
+			</configuration>
+  		</plugin>
+  	</plugins>
   </build>
 </project>

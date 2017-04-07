@@ -4,5 +4,6 @@ import factory.com.zss.bean.UserBean;
 
 public interface IuserDao {
 
-	public void say(UserBean user);
+	
+	public void addUser(UserBean user);
 }

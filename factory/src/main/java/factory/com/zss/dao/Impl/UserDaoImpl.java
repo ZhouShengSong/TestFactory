@@ -5,9 +5,11 @@ import factory.com.zss.dao.IuserDao;
 
 public class UserDaoImpl implements IuserDao {
 
-	public void say(UserBean user) {
+	
+	public void addUser(UserBean user) {
 		// TODO Auto-generated method stub
-		
+		UserBean newUser= user;
+		System.out.println(newUser.getUser_name());
 	}
 
 }

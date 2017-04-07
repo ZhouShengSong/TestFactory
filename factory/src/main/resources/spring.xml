@@ -10,6 +10,14 @@
   	<property name="user_password" value="123456"></property>
   </bean>
   
+  <bean id="userDao" class="factory.com.zss.dao.Impl.UserDaoImpl">
+  	
+  </bean>
+
+  <bean id="userService" class="factory.com.zss.service.impl.UserServiceImpl">
+  	<property name="userDao" ref="userDao"></property>
+  </bean>
+  
   
 </beans>
 
